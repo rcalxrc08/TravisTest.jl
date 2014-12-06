@@ -1,4 +1,4 @@
-using travis-julia-test
+using TravisTest
 using Base.Test
 
 # write your own tests here

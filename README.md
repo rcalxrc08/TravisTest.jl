@@ -1,4 +1,4 @@
-# travis-julia-test #
+# TravisTest.jl #
 
 Repository for testing Julia support at
 the [Travis Continuous Integration][travis] (CI) service.

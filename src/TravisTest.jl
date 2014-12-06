@@ -1,4 +1,4 @@
-module travis-julia-test
+module TravisTest
 
 # package code goes here
 

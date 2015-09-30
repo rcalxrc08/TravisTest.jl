@@ -6,8 +6,7 @@ julia:
 os:
     - linux
     - osx
-#matrix:
-#    fast_finish: true
+sudo: false
 script:
     - julia -e 'Base.runtests()'
     - julia-debug -e 'Base.runtests()'

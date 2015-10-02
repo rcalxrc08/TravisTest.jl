@@ -7,8 +7,13 @@ os:
     - linux
     - osx
 sudo: false
+notifications:
+    email: false
 script:
-    - julia -e 'Base.runtests()'
-    - julia-debug -e 'Base.runtests()'
-    - julia -e 'Base.runtests("pkg")'
-    - julia-debug -e 'Base.runtests("pkg")'
+     - julia -e 'Pkg.add("WinRPM")'
+     - julia -e 'Pkg.build()'
+     - julia -e '@time Pkg.build()'
+#    - julia -e 'Base.runtests()'
+#    - julia-debug -e 'Base.runtests()'
+#    - julia -e 'Base.runtests("pkg")'
+#    - julia-debug -e 'Base.runtests("pkg")'
